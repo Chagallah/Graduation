@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation</title>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+</head>
+
+
+<body style="background-color: #a7a7df;">
+    <div class="main-container">
+        <header>
+    
+            <div class="container">
+        
+              <nav class="navbar">
+                <div class="navdiv">
+                    <ul class="nav_list">
+                        <li class="nav_item" ><img src="icons/home.png" class="icons"/><a href="#home-section" class="nav_link" >Home</a></li>
+                        <li class="nav_item"><img src="icons/about.png" class="icons"/><a href="#about-section" class="nav_link">About</a></li>
+                        <li class="nav_item"><img src="icons/communicate.png" class="icons"/><a href="#contact-section" class="nav_link">Me</a></li>
+                    </ul>
+                </div>
+                
+                
+              </nav>
+            </div>
+          </header>
+    
+          <section class="home" id="home-section">
+                <div class="home-info">
+                    <div class="title">
+                        <h1 class="section_title"> 
+                            Hello Catherine, <span>Congratulations! You made it!!</span>
+                            <div>
+                                <img id="myImg" src="images/Image00.jpeg" loading="lazy" style="width:100%;max-width:300px">
+                                
+                            </div>
+                            <div class="audio">
+                                <audio controls>
+                                    <source  id="myAudio" src="audio/Chris_Brown_Forever.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            
+                        </h1>
+                    </div>
+                    
+                    <p>This is a simple website celebrating this huge win and also achieving this large milestone in your life.
+                        Congratulations above all and this is but only a step as you further continue experiencing life.
+                        <br>
+                        You should be proud of yourself for all the hard work and dedication that you put into 
+                        achieving this milestone.
+                        <br>
+                        Best wishes for your future endeavors!
+                    </p>
+                </div>
+    
+                <button type="button" class="modal-button":hover onclick="openPopup()">Click Me</button>
+                <div class="popup" id="popup">
+                    
+                    <h2>Congratulations Kate</h2>
+                    <img src="/icons/heart.png" >
+                    <p>Congratulations! I am proud of You!</p>
+                    <button type="reset" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+          </section>
+
+          <section class="about" id="about-section">
+            <div class="container-about">
+                <h2>A Trip Down <span>Memory Lane</span></h2>
+                <div class="box" loading="lazy">
+                    <div class="dream">
+                        <img src="images/Image01.jpeg" alt="">
+                        <img src="images/Image02.jpeg" alt="">
+                        <img src="images/Image03.jpeg" alt="">
+                        <img src="images/Image04.jpeg" alt="">
+                        <img src="images/Image05.jpeg" alt="">
+                        <img src="images/Image06.jpeg" alt="">
+                    </div>
+
+                    <div class="dream">
+                        <img src="images/Image07.jpeg" alt="">
+                        <img src="images/Image08.jpeg" alt="">
+                        <img src="images/Image09.jpeg" alt="">
+                        <img src="images/Image18.jpeg" alt="">
+                        <img src="images/Image11.jpeg" alt="">
+                        <img src="images/Image12.jpeg" alt="">
+                    </div>
+
+                    <div class="dream">
+                        <img src="images/Image13.jpeg" alt="">
+                        <img src="images/Image14.jpeg" alt="">
+                        <img src="images/Image15.jpeg" alt="">
+                        <img src="images/Image16.jpeg" alt="">
+                        <img src="images/Image17.jpeg" alt="">
+                        <img src="images/Image19.jpeg" alt="">
+                    </div>
+
+                    <div class="dream">
+                        <img src="images/Image21.jpeg" alt="">
+                        <img src="images/Image22.jpeg" alt="">
+                        <img src="images/Image23.jpeg" alt="">
+                        <img src="images/Image24.jpeg" alt="">
+                        <img src="images/Image25.jpeg" alt="">
+                        <img src="images/Image20.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="more-button">
+                    <a href="#">More</a>
+                </div>
+
+            </div>
+          </section>
+    
+          <section class="contact" id="contact-section">
+            <div class="container-contact">
+                <h3>Me</h3>
+                <p class="contact-info">This was a page to have your contacts but sasa you can't contact yourself <br>
+                so sasa it has the graduation card invite for the event where you <br> celebrated your 
+                <span>undergraduate graduation ceremony or parte. Cheers to you!!</span></p>
+                <img class="contact-image" src="images/Green and Cream Floral Graduation Invitation Final Copy.png" alt="">
+            </div>
+
+          </section>
+    
+    <script>
+    let popup = document.getElementById("popup");
+    
+    function openPopup(){
+        popup.classList.add("open-popup")
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup")
+    }
+    </script>
+    </div>
+    
+   
+    
+</body>
+</html>
+
+<style>
+.audio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+#myImg:hover {opacity: 0.7;}
+
+.container{
+    display: flexbox;
+    margin-bottom: -10px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+}
+
+.nav_list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*left: 0;
+    bottom: 0;
+    top: 50px;
+    width: -10px;
+    padding: 4px;
+    padding-left: 0;
+    background-color: #a7a7df; */
+
+}
+.nav_item{
+    position: relative;
+    margin-right: 20PX;
+}
+.nav_link{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+.nav_link:hover {
+    color: #007bff;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.h1 {
+    font-weight: 500;
+    font-size: 2.6rem;
+    position: relative;
+    top: -10px
+}
+span{
+    font-weight: bolder;
+    font-style: italic;
+    color: blueviolet;
+}
+.modal-button{
+    background: #ffc0cb;
+    width: 75px;
+    border-radius: 30px;
+}
+.modal-button:hover {
+    background-color: beige;
+    opacity: 1;
+}
+
+.popup{
+    width: 300px;
+    background: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    width: 50px;
+}
+
+.popup h2{
+    font-size: 20px;
+    font-weight: 500px;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    padding: 10px 0;
+    background: #a7a7df;
+    color: fff;
+    border: 0;
+    outline: none;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px 0 20px;
+}
+/*
+.container-about .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+*/
+.container-about .box .dream{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-about .box .dream img{
+    width: 30%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container-about .box .dream img:hover{
+    opacity: 0.7;
+}
+.container-about .more-button{
+    margin: 40px 0 30px 0;
+    padding: 10px 20px;
+    background-color: #ffc0cb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container-about .more-button:hover{
+    background-color: beige;
+    opacity: 1;
+   
+}
+.container-about .more-button a{
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-bottom: -25px;
+}
+h3{
+    font-weight: 500;
+    font-size: 2.6rem;
+    position: center;
+    margin-top: -10px;
+    text-decoration: underline;
+}
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px 0 20px;
+}
+.container-contact .contact-info{
+    margin-top: -35px;
+}
+.container-contact .contact-image{
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.container-contact .contact-image:hover{opacity: 0.8;}
+
+@media only screen and (max-width: 768px) {
+    .h1 {
+        font-size: 2rem;
+    }
+    .container-about .box .dream img{
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .h1{
+        font-size: 2.8rem;
+    }
+}
+
+</style>
