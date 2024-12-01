@@ -1,1 +1,1 @@
-# Graduation simple website
+# Simple Graduation website 
